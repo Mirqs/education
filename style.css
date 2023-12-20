@@ -1,0 +1,224 @@
+body{
+    margin: 0;                              /*убирает отступы от всех краев*/
+    background-image: url(https://altanschool.s3.eu-central-1.amazonaws.com/learns/1697021662483_headerpic.jpg); /*изображение фона*/
+    background-size: 100%;                  /*размер фона*/
+    background-position-y: -50px;           /*изображение чуть поднято наверх*/
+    background-attachment: fixed;           /*фиксация фона*/
+}
+
+header{
+    height: 100%;               /*высота*/
+    padding: 30px;          /*внутренний отступ*/
+    text-align: right;      /*текст выровнени влево*/
+    color: rgb(0, 0, 91); /*цвет текста*/
+    font-size: 25px;        /*размер текста*/
+    
+}
+
+h1{
+    padding-top: 50px;  /*Дополнительный отступ заголовка*/
+    font-size: 80px;    /*размер заголовка*/
+    color:rgb(255, 255, 255);  /*цвет*/
+    animation-name: month2;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes month2{
+   0%{ color: white;}
+   25%{ color: red;}
+   50%{ color: orange;}
+   75%{ color: blue;}
+   100%{ color: yellow;}
+}
+
+main{
+    height: 1000px;   /*высота основной части*/
+    display: flex;
+}
+
+footer{
+    height: 100%;    /*высота*/
+    text-align: left;  /*текст выровннен влево*/
+    padding: 50px;   /*внутренний оступ*/
+    color: white;  /*цвет текста*/
+    font-size: 20px;  /*размер текста*/
+}
+
+.social{
+    list-style: none; /*убирает маркеры*/
+    display: flex; /*отображает в ряд*/
+    align-items: left; /*выравнивает иконки по центру внутри каждого пункта*/
+    justify-content: left; /*выравнивает все иконки по центру страницы*/
+    margin: 0;
+    padding: 0;
+}
+
+.social li {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.nav{
+    position: sticky;
+    top: 0;
+}
+
+.nav  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: cornflowerblue;
+    font-size: 25px;
+    width: 100%;
+    border: 2px solid yellowgreen;
+    text-align: center;
+    overflow: hidden;
+}
+.nav a{
+    display: block;
+    text-decoration: none;
+    color: orange;
+    padding: 8px 16px;
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav a:hover{
+    background-color: aqua;
+    color: rgb(133, 21, 143);
+}
+.block1{
+    width: 25%;
+    height: 100%;
+    background: linear-gradient( greenyellow, magenta);
+    padding-left: 30px;
+}
+.block2{
+    width: 25%;
+    height: 100%;
+    background: linear-gradient( rgb(168, 11, 207), rgba(226, 250, 10, 0.87));  
+    padding-left: 30px;
+}
+.block3{
+    width: 25%;
+    height: 100%;
+    background: linear-gradient( red, rgb(0, 60, 255));
+    padding-left: 30px;
+}
+.block4{
+    width: 25%;
+    height: 100%;
+    background: linear-gradient( rgb(0, 255, 234), rgb(0, 255, 42));
+    padding-left: 30px;
+}
+.block1 li{
+    background-color: antiquewhite;
+    line-height: 2em;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 2em;
+    width: 60%;
+    height: 50px;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+.block1 li:hover{
+    background-color: red;
+    color: white;
+    width: 70%;
+    height: 70px;
+}
+.block2 li{
+    background-color: rgb(28, 183, 245);
+    line-height: 2em;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 2em;
+    width: 60%;
+    height: 50px;
+    list-style-type: square;
+    list-style-position: inside;
+}
+.block2 li:hover{
+    background-color: rgb(216, 21, 255);
+    color: white;
+    width: 70%;
+    height: 70px;
+}
+.block3 li{
+    background-color: rgb(214, 131, 21);
+    line-height: 2em;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 2em;
+    width: 60%;
+    height: 50px;
+    list-style-position: inside;
+}
+.block3 li:hover{
+    background-color: rgba(175, 0, 137, 0.418);
+    color: white;
+    width: 70%;
+    height: 70px;
+}
+.block4 li{
+    background-color: rgb(42, 214, 19);
+    line-height: 2em;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 2em;
+    width: 60%;
+    height: 50px;
+    list-style-position: inside;
+}
+.block4 li:hover{
+    background-color: rgb(23, 119, 245);
+    color: white;
+    width: 70%;
+    height: 70px;
+}
+h2{
+    animation-name: month;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+@keyframes month{
+    from{ padding-right: 0%;}
+
+    to{ padding-right: 70%;}
+}
+
+form{
+    width: 100%;
+    float: right;
+    display: flex;
+}
+input{
+    padding: 5px 10px;
+    border: 1px solid lightsalmon;
+    font-size: 20px;
+}
+.src{
+    width: 25%;
+}
+.inp{
+    width: 10%;
+    background-color: rgb(5, 79, 136);
+    color: antiquewhite;
+}
+.inp:hover{
+    background-color: rgb(14, 82, 84);
+    color: rgb(0, 170, 255);
+    cursor: pointer;
+}
+
+
